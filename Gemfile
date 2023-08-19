@@ -59,3 +59,8 @@ gem 'pry-rails'
 # 画像処理ツールのGem
 gem 'mini_magick'
 gem 'image_processing', '~> 1.2'
+
+# 本番環境（Render）のデータベース（PostgreSQL）を使用するためのGem
+group :production do
+  gem 'pg'
+end
